@@ -12,7 +12,7 @@ import torch
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
-import LPGNN.utils.type_conversions
+import HNE.utils.type_conversions
 
 def draw_graph_with_attrs(G, attrs, **kargs):
     """Draws a graph, coloring the nodes according to the attributes.
@@ -26,7 +26,7 @@ def draw_graph_with_attrs(G, attrs, **kargs):
     """
 
     # Convert the attributes to a dictionary.
-    node_dict = LPGNN.utils.type_conversions.tensor_to_node_dict(attrs, G.nodes())
+    node_dict = HNE.utils.type_conversions.tensor_to_node_dict(attrs, G.nodes())
     
     # If not set, set the node position and size.
     if 'pos' not in G.graph:
@@ -73,7 +73,7 @@ def animate_graph_with_attrs(G, attrs_list, savename=None):
     images.append(imageio.imread(dir_path+f'/000.png'))
 
     def update_colors(i):
-        node_dict = LPGNN.utils.type_conversions.tensor_to_node_dict(attrs_list[i].detach().numpy(), G.nodes())
+        node_dict = HNE.utils.type_conversions.tensor_to_node_dict(attrs_list[i].detach().numpy(), G.nodes())
         # Update the node colors.
         ax.clear()
         pos = node_dict

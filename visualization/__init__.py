@@ -1,4 +1,4 @@
-import LPGNN.visualization.gnn_attr_passing
-import LPGNN.visualization.loss_plotting
+import HNE.visualization.gnn_attr_passing
+import HNE.visualization.loss_plotting
 
 from .degree_distribution import plot_degree_distribution

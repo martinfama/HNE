@@ -1,16 +1,16 @@
 import optparse
 import numpy as np
-import LPGNN.network_analysis as na
+import HNE.network_analysis as na
 import networkx as nx
 
 import torch
 import torch_geometric as pyg
 
-import LPGNN.visualization.loss_plotting as loss_plotting
-import LPGNN.DataSetup as DataSetup
-import LPGNN.GraphNeuralNet as GraphNeuralNet
-import LPGNN.LinkPrediction as LinkPrediction
-import LPGNN.Logger as Logger
+import HNE.visualization.loss_plotting as loss_plotting
+import HNE.DataSetup as DataSetup
+import HNE.GraphNeuralNet as GraphNeuralNet
+import HNE.LinkPrediction as LinkPrediction
+import HNE.Logger as Logger
 
 import matplotlib.pyplot as plt
 

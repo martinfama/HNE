@@ -7,9 +7,9 @@ import torch_geometric as pyg
 from torch.nn import init
 import pdb
 
-import LPGNN.network_analysis as na
-import LPGNN.LinkPrediction as LinkPrediction
-import LPGNN.graph_metrics as graph_metrics
+import HNE.network_analysis as na
+import HNE.LinkPrediction as LinkPrediction
+import HNE.graph_metrics as graph_metrics
 
 device = 'cpu'
 
